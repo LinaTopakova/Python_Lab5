@@ -1,8 +1,6 @@
-def main():
-    x = 1
-    y = 2
-    print(x + y)
+def add_numbers(a: int, b: int) -> int:
+    return a + b
 
 
-if __name__ == "__main__":
-    main()
+result = add_numbers(5, 10)  # правильно: оба числа
+print(result)

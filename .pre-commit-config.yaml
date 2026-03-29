@@ -26,3 +26,20 @@ repos:
       - id: ruff-check
         args: [--fix, --unsafe-fixes, --show-fixes]
       - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: mypy-check
+        name: Check types with mypy
+        language: system
+        entry: uv run mypy
+        types: [python]
+        require_serial: true
+        pass_filenames: true
+
+      - id: commitizen
+        name: Check commit messages with Commitizen
+        language: system
+        entry: uv run cz check
+        args: [--allow-abort, --commit-msg-file]
+        stages: [commit-msg]
