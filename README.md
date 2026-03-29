@@ -62,7 +62,6 @@
 ### Для другого разработчика:
 
 #### 1. Клонирование репозитория
-```bash
 git clone https://github.com/username/Topakova_PV_precommit.git
 cd Topakova_PV_precommit
 #### 2. Установка uv (если не установлен)
