@@ -1,5 +1,7 @@
 def main():
-    print("Hello from topakova-pv-precommit!")
+    x = 1
+    y = 2
+    print(x + y)
 
 
 if __name__ == "__main__":
