@@ -1,6 +1,5 @@
-def add_numbers(a: int, b: int) -> int:
-    return a + b
+def greet(name):
+    return True
 
 
-result = add_numbers(5, 10)  # правильно: оба числа
-print(result)
+greet("World")

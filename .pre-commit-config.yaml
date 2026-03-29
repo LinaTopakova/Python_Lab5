@@ -43,3 +43,9 @@ repos:
         entry: uv run cz check
         args: [--allow-abort, --commit-msg-file]
         stages: [commit-msg]
+
+      - id: no-print-statements
+        name: Forbid print() statements
+        language: pygrep
+        entry: print\(
+        types: [python]
